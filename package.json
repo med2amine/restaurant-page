@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "in this project i will be making a restaurant page but using classes and webpack rather than multiple html pages",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/med2amine/restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/med2amine/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/med2amine/restaurant-page#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.6",
+    "webpack": "^5.105.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3"
+  },
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack"
+  }
+}
