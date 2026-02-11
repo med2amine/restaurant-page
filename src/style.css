@@ -1,15 +1,70 @@
-body {
-  font-family: Arial, sans-serif;
+* {
+  padding: 0;
   margin: 0;
 }
 
-header {
-  background: black;
-  color: white;
-  padding: 20px;
+:root{
+  --background : #290001;
+  --primary-text : #DBCBBD;
+  --secondary-accent : #87431D;
+  --highlight-accent : #C87941;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
 }
 
-button {
-  margin-right: 10px;
-  padding: 8px 12px;
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+}
+
+h1 {
+  margin-bottom: var(--space-4);
+}
+
+h2 {
+  margin-bottom: var(--space-3);
+}
+
+h3 {
+  margin-bottom: var(--space-2);
+}
+
+h1 , h2 , h3 , p, a{
+  color: var(--primary-text);
+}
+
+header{
+  padding: var(--space-2);
+  display: flex;
+  justify-content: space-between;
+}
+
+nav{
+  display: flex;
+  gap: var(--space-4);
+}
+
+button{
+  min-width: var(--space-6);
+  max-height: var(--space-3);
+  border-radius: 8px;
+  border-color: var(--highlight-accent);
+}
+
+
+main{
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5);
+}
+
