@@ -4,6 +4,7 @@ export default function loadMenu(){
 
     const main = document.createElement('main')
     const menuSection = document.createElement('section')
+    menuSection.id = 'menuSection'
     const menuTitle = document.createElement('h1')
 
     menuTitle.textContent = 'Menu'
@@ -12,6 +13,7 @@ export default function loadMenu(){
 
     function createMenuCategory(title,items){
         const category = document.createElement('div')
+        category.classList.add('category')
         const heading = document.createElement('h2')
 
         heading.textContent = title
@@ -19,9 +21,11 @@ export default function loadMenu(){
 
         items.forEach(item => {
             const dish = document.createElement('div')
+            dish.classList.add('dish')
             const name = document.createElement('h3')
             const description = document.createElement('p')
             const price = document.createElement('span')
+            price.classList.add('price')
 
             name.textContent = item.name
             description.textContent = item.description

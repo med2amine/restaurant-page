@@ -9,6 +9,7 @@ export default function loadHome(){
     content.appendChild(footer)
 
     const hero = document.createElement('section')
+    hero.id = 'hero'
     
     const title = document.createElement('h1')
     title.textContent = 'Ristorante Aurelio'
@@ -25,6 +26,7 @@ export default function loadHome(){
     main.appendChild(hero)
 
     const philosophy = document.createElement('section')
+    philosophy.id = 'philosophy'
     
     const philosophyText = document.createElement('p')
     philosophyText.textContent = 'At Ristorante Aurelio, we celebrate the art of Italian dining—seasonal ingredients, timeless recipes, and quiet excellence.'
@@ -33,8 +35,10 @@ export default function loadHome(){
     main.appendChild(philosophy)
 
     const details = document.createElement('section')
+    details.id = 'details'
 
     const cuisine = document.createElement('div')
+    cuisine.id = 'cuisine'
     const cuisineTitle = document.createElement('h3')
     const cuisineText = document.createElement('p')
 
@@ -44,6 +48,7 @@ export default function loadHome(){
     cuisine.append(cuisineTitle,cuisineText)
 
     const location = document.createElement('div')
+    location.id = 'location'
     const locationTitle = document.createElement('h3')
     const locationText = document.createElement('p')
     
@@ -53,6 +58,7 @@ export default function loadHome(){
     location.append(locationTitle,locationText)
 
     const hours = document.createElement('div')
+    hours.id = 'hours'
     const hoursTitle = document.createElement('h3')
     const hoursText = document.createElement('p')
 
@@ -64,6 +70,7 @@ export default function loadHome(){
     main.appendChild(details)
 
     const signature = document.createElement('section')
+    signature.id = 'signature'
     const signatureText = document.createElement('p')
 
     signatureText.textContent = 'Where tradition meets discretion'

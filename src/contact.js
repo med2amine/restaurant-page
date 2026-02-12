@@ -4,6 +4,7 @@ export default function loadContact(){
 
     const main = document.createElement('main')
     const contactSection = document.createElement('section')
+    contactSection.id = 'contactSection'
 
     const title = document.createElement('h1')
     title.textContent = 'Contact'
@@ -12,6 +13,8 @@ export default function loadContact(){
     name.textContent = 'Ristorante Aurelio'
 
     const addressBlock = document.createElement("div")
+    addressBlock.id = 'addressBlock'
+
     const addressTitle = document.createElement("h3")
     addressTitle.textContent = 'Address'
 
@@ -21,6 +24,8 @@ export default function loadContact(){
     addressBlock.append(addressTitle,addressText)
 
     const reservationBlock = document.createElement("div")
+    reservationBlock.id = 'reservationBlock'
+    
     const reservationTitle = document.createElement("h3")
     reservationTitle.textContent = 'Reservation'
 
